@@ -14,8 +14,8 @@ using namespace calib;
 
 cv::Size CalibPipeline::getCameraResolution()
 {
-    mCapture.set(cv::CAP_PROP_FRAME_WIDTH, 10000);
-    mCapture.set(cv::CAP_PROP_FRAME_HEIGHT, 10000);
+    mCapture.set(cv::CAP_PROP_FRAME_WIDTH, 1600);
+    mCapture.set(cv::CAP_PROP_FRAME_HEIGHT, 1200);
     int w = (int)mCapture.get(cv::CAP_PROP_FRAME_WIDTH);
     int h = (int)mCapture.get(cv::CAP_PROP_FRAME_HEIGHT);
     return cv::Size(w,h);
